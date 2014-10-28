@@ -1,0 +1,35 @@
+/*
+ * style.css
+ */
+
+body {
+  padding-top: 50px;
+}
+ 
+.container, .container-fluid {
+ padding-right: 15px;
+ padding-left: 15px;
+ background-color: #fff;
+}
+
+.row {
+ margin-bottom: 20px;
+}
+
+[class*="col-"], header, footer, nav, aside, section, div[role="main"] {
+ padding-top: 15px;
+ padding-bottom: 15px;
+ background-color: #f1f1f1;
+ background-color: rgba(86,61,124,.15);
+ border: 1px solid #444;
+ border: 1px solid rgba(86,61,124,.2);
+ text-align: center;
+}
+
+div[role="main"] {
+ background-color: #fff;
+}
+
+div[role="main"], nav, aside {
+ height: 600px;
+}
