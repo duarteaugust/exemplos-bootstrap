@@ -1,5 +1,19 @@
+<<<<<<< HEAD
 bower_components/
 node_modules/
 temp/
 img/
 bootstrap/
+=======
+# Build and Release Folders
+bin/
+bin-debug/
+bin-release/
+
+# Other files and folders
+.settings/
+
+# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
+# should NOT be excluded as they contain compiler settings and other important
+# information for Eclipse / Flash Builder.
+>>>>>>> 0e6fa6ecb6eef2e90d37f750dd9ca8e2973469d1
