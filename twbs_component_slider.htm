@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Document</title>
+  
+  
+  <!-- Bootstrap -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Latest compiled and minified CSS 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  -->
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="components/bootstrap-slider/bootstrap-slider.min.js"></script>
+
+  <style type="text/css" rel="components/bootstrap-slider/bootstrap-slider.css">
+
+  <script type="text/javascript">
+    var RGBChange = function() {
+      $('#RGB').css('background', 'rgb('+r.getValue()+','+g.getValue()+','+b.getValue()+')')
+    };
+
+    var r = $('#R').slider()
+        .on('slide', RGBChange)
+        .data('slider');
+    var g = $('#G').slider()
+        .on('slide', RGBChange)
+        .data('slider');
+    var b = $('#B').slider()
+        .on('slide', RGBChange)
+        .data('slider');
+
+
+  </script>
+
+    
+
+    <!-- Styles -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <style type="text/css">
+
+      #RGB {
+        height: 20px;
+        background: rgb(128, 128, 128);
+      }
+      #RC .slider-selection {
+        background: #FF8282;
+      }
+      #RC .slider-handle {
+        background: red;
+      }
+      #GC .slider-selection {
+        background: #428041;
+      }
+      #GC .slider-handle {
+        background: green;
+      }
+      #BC .slider-selection {
+        background: #8283FF;
+      }
+      #BC .slider-handle {
+        border-bottom-color: blue;
+      }
+      #R, #G, #B {
+        width: 300px;
+      }
+
+
+    </style>
+
+  <script type="text/javascript" href></script>
+</head>
+<body>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+
+          <p>
+          <b>R</b> <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="255" data-slider-step="1" data-slider-value="128" data-slider-id="RC" id="R" data-slider-tooltip="hide" data-slider-handle="square" />
+          </p>
+          <p>
+          <b>G</b> <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="255" data-slider-step="1" data-slider-value="128" data-slider-id="GC" id="G" data-slider-tooltip="hide" data-slider-handle="round" />
+          </p>
+          <p>
+          <b>B</b> <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="255" data-slider-step="1" data-slider-value="128" data-slider-id="BC" id="B" data-slider-tooltip="hide" data-slider-handle="triangle" />
+          </p>
+          <div id="RGB"></div>        
+      </div>
+    </div>
+
+
+
+  </div><!-- end div container -->
+
+    <!-- Bootstrap core JavaScript ========================= -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+
+</body>
+</html>
