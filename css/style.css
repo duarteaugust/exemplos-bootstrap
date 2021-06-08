@@ -1,5 +1,5 @@
 /*
- * style.css
+ *    style.css
  */
 
 body {
@@ -27,7 +27,7 @@ body {
 }
 
 div[role="main"] {
- background-color: #fff;
+ background-color: #777;
 }
 
 div[role="main"], nav, aside {
